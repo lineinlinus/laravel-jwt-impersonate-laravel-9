@@ -16,7 +16,7 @@
     "require": {
       "php": "^8.0",
       "laravel/framework": ">=9.0",
-      "php-open-source-saver//jwt-auth": "*"
+      "php-open-source-saver/jwt-auth": "*"
     },
     "require-dev": {
       "phpunit/phpunit": "^7.5 || ^8.0",
