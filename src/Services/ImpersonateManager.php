@@ -88,7 +88,7 @@ class ImpersonateManager
      */
     public function take($from, $to)
     {
-        if (!$this->isImpersonating()) {
+        //if (!$this->isImpersonating()) {
             if (!($to->getKey() == $from->getKey())) {
                 if ($to->canBeImpersonated()) {
                     if ($from->canImpersonate()) {
@@ -108,9 +108,9 @@ class ImpersonateManager
             } else {
                 throw new CantImpersonateSelfException();
             }
-        } else {
-            throw new AlreadyImpersonatingException();
-        }
+      //  } else {
+         //   throw new AlreadyImpersonatingException();
+        //}
     }
 
     /**
